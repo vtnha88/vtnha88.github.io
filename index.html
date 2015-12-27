@@ -23,9 +23,10 @@
         <div id="main" role="main">
             <!--MAIN CONTAINER-->
             <div id="home" class="page clearfix" style="background-image:url('img/me.jpg')">
-                <div class="container">
-                    <h1 class="base-font-size">
-                        Front-End Developer<br>Portfolio
+                <div class="container-fluid">
+                    <!-- <img class="me" src="img/me.jpg" alt=""> -->
+                    <h1 class="base-font-size col-xs-12">
+                        Front-End <br>Developer<br>Portfolio
                     </h1>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
@@ -62,68 +63,92 @@
                 </div>
             </div>
             <div id="projects" class="page clearfix">
-                <div class="container-fluid no-margin">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="project">
                                 <h2 class="project-name base-font-size">Serta.com</h2>
                                 <br>
                                 <a href="http://www.serta.com" class="btn btn-page" target="_blank">Visit Website</a>
+                                <p>&nbsp;</p>
+                                
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <a class="project-preview" href="http://www.serta.com" target="_blank"><img class="project-image" src="img/projects/serta-mockup.jpg"></a>
+                            <a class="project-preview" href="http://www.serta.com" target="_blank"><img class="project-image" src="img/projects/serta-mockup.png"></a>
                         </div>
                     </div>
+                </div>
+
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="project">
                                 <h2 class="project-name base-font-size">Tagrem modern technology services company</h2>
                                 <br>
                                 <a href="http://www.tagrem.com" class="btn btn-page" target="_blank">Visit Website</a>
+                                <p>&nbsp;</p>
+                            
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <a class="project-preview" href="http://www.tagrem.com" target="_blank"><img class="project-image" src="img/projects/tagrem-mockup.jpg"></a>
+                            <a class="project-preview" href="http://www.tagrem.com" target="_blank"><img class="project-image" src="img/projects/tagrem-mockup.png"></a>
                         </div>
                     </div>
+                </div>
+
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="project">
                                 <h2 class="project-name base-font-size">Indition software flatform</h2>
                                 <br>
                                 <a href="https://indition.com/index.html" class="btn btn-page" target="_blank">Visit Website</a>
+                                <p>&nbsp;</p>
+                                
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <a class="project-preview" href="https://indition.com/index.html" target="_blank"><img class="project-image" src="img/projects/indition-mockup.jpg"></a>
+                            <a class="project-preview" href="https://indition.com/index.html" target="_blank"><img class="project-image" src="img/projects/indition-mockup.png"></a>
                         </div>
                     </div>
+                </div>
+
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="project">
                                 <h2 class="project-name base-font-size">FiveStar Mattress</h2>
                                 <br>
                                 <a href="http://www.fivestarmattress.com/index.html" class="btn btn-page" target="_blank">Visit Website</a>
+                                <p>&nbsp;</p>
+                                
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <a class="project-preview" href="http://www.fivestarmattress.com/index.html" target="_blank"><img class="project-image" src="img/projects/fivestar-mockup.jpg"></a>
+                            <a class="project-preview" href="http://www.fivestarmattress.com/index.html" target="_blank"><img class="project-image" src="img/projects/fivestar-mockup.png"></a>
                         </div>
                     </div>
+                </div>
+
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="project">
                                 <h2 class="project-name base-font-size">SSB, Serta and Simmons</h2>
                                 <br>
                                 <a href="https://jobs.sertasimmons.com/index.html" class="btn btn-page" target="_blank">Visit Website</a>
+                                <p>&nbsp;</p>
+                                
                             </div>
                         </div>
                         <div class="col-lg-8">
-                            <a class="project-preview" href="https://jobs.sertasimmons.com/index.html" target="_blank"><img class="project-image" src="img/projects/ssb-mockup.jpg"></a>
+                            <a class="project-preview" href="https://jobs.sertasimmons.com/index.html" target="_blank"><img class="project-image" src="img/projects/ssb-mockup.png"></a>
                         </div>
                     </div>
                 </div>
+
+                
             </div>
             <div id="contact" class="page clearfix" style="background-image:url('img/contact-gray-bg.jpg')">
                 <div class="container-fluid">
@@ -222,22 +247,7 @@
         }, 700, 'easeOutQuart');
         return false;
     });
-    $('.capture .link').click(function() {
-        $('body').css({
-            'overflow': 'hidden'
-        });
-        var topPos = $(this).offset().top;
-        var leftPos = $(this).offset().left;
-        $('.page-link').css({
-            'left': leftPos,
-            'top': topPos,
-        }).addClass('open');
-        $('.project-detail').addClass('open')
-    })
-    $('.project-detail-close').click(function() {
-        $('.project-detail, .page-link').removeClass('open')
-        $('body').removeAttr('style');
-    });
+    
     $('[data-toggle="validator"]').validator().on('submit', function(e) {
 
         var formIsInValid = $(this).find('button[type="submit"]').hasClass('disabled');
