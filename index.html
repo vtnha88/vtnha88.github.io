@@ -162,8 +162,8 @@
                             <!-- <p>&nbsp;</p> -->
                             <div>
                                 <a class="btn btn-page" href="tel:841286097335">(+84)1286097335</a>&nbsp;
-                                <a class="btn btn-page" href="https://www.facebook.com/nha.vothanh88">Facebook</a>&nbsp;
-                                <a class="btn btn-page" href="https://www.linkedin.com/in/nha-vo-84b27795">Linkedin</a>&nbsp;
+                                <a class="btn btn-page" target="_blank" href="https://www.facebook.com/nha.vothanh88">Facebook</a>&nbsp;
+                                <a class="btn btn-page" target="_blank" href="https://www.linkedin.com/in/nha-vo-84b27795">Linkedin</a>&nbsp;
                             </div>                        
                             <p>&nbsp;</p>
                             
@@ -234,7 +234,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- From Validator JavaScript -->
-    <script src="js/validator.js"></script>
+    <!-- <script src="js/validator.js"></script>-->
     <script>
     var window_height = $(window).height();
     $('#home').height(window_height);
@@ -245,30 +245,30 @@
         return false;
     });
     
-    $('[data-toggle="validator"]').validator().on('submit', function(e) {
+    // $('[data-toggle="validator"]').validator().on('submit', function(e) {
 
-        var formIsInValid = $(this).find('button[type="submit"]').hasClass('disabled');
-        if (!formIsInValid) {
-            var name = $(this).find('#name').val().trim();
-            var email = $(this).find('#email').val().trim();
-            var subject = $(this).find('#subject').val().trim();
-            var msg = $(this).find('#message').val().trim();
-            $.ajax({
-                url: "email/contact_me.php",
-                type: "POST",
-                data: {
-                    name: name,
-                    subject: subject,
-                    email: email,
-                    message: msg,
-                },
-                success: function() {
-                    $('.form-contact').empty().append('<div class="respond bg-success text-success">Your message has been sent! Thank you.</div>');
-                }
-            });
-        }
+    //     var formIsInValid = $(this).find('button[type="submit"]').hasClass('disabled');
+    //     if (!formIsInValid) {
+    //         var name = $(this).find('#name').val().trim();
+    //         var email = $(this).find('#email').val().trim();
+    //         var subject = $(this).find('#subject').val().trim();
+    //         var msg = $(this).find('#message').val().trim();
+    //         $.ajax({
+    //             url: "email/contact_me.php",
+    //             type: "POST",
+    //             data: {
+    //                 name: name,
+    //                 subject: subject,
+    //                 email: email,
+    //                 message: msg,
+    //             },
+    //             success: function() {
+    //                 $('.form-contact').empty().append('<div class="respond bg-success text-success">Your message has been sent! Thank you.</div>');
+    //             }
+    //         });
+    //     }
 
-    });
+    // });
     </script>
 </body>
 
