@@ -153,7 +153,7 @@ img {
         color: red;
     }
 }
-.base-font-size{font-size: 55px !important;text-transform: uppercase;}
+.base-font-size{font-size: 65px !important;text-transform: uppercase;font-weight: 800}
 .btn {
     border-radius: 0;
     padding: 0 35px 0;
@@ -186,6 +186,7 @@ img {
     height: 52px;
     line-height: 48px;
     font-size: 20px;
+    text-transform: uppercase;
 }
 .logo {
     color: #fff;
@@ -225,11 +226,11 @@ img {
 
 #home {
     background-position: right top;
-    background-size:auto 100%;
+    background-size:contain;
     background-repeat: no-repeat;
     color: #fff;
     background-color: #000;    
-    max-height: 800px;
+    height: 768px;
     .me{
         position: absolute;
         right:0;
@@ -248,14 +249,14 @@ img {
         // text-transform: uppercase;        
     }
     h1 {
-        font-weight: 700;
-        line-height: 89px;
+        font-weight: 800;
+        line-height: 106px;
         padding-right: 30%;
-        font-size: 86px!important;
+        font-size: 97px!important;
         z-index: 1;
         position: relative;
         margin-top: 225px;
-        padding-left:0;
+        padding-left: 0;
         span{
             font-size: 38px;
         }
@@ -276,6 +277,8 @@ img {
 #about{
     background: #000;
     color:#fff;
+    box-shadow: inset 1px 1px 7px 5px #000;
+    
     h2{
         span{
             font-size: 38px;
@@ -313,7 +316,7 @@ img {
     .project-name{
         text-transform: uppercase;
         font-size: 40px;  
-        line-height: 62px ;
+        line-height: 85px ;
         margin-top: 0;     
     }
     .project-preview{        
